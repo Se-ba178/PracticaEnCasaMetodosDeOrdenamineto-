@@ -1,4 +1,4 @@
-##    Metodos de ordenamiento Practica prueba practica
+#    *Metodos de ordenamiento Practica prueba practica*
 
 Los metodos de ordenamineto son algoritmos diseñados para organizar los elementos de una  lista y o arreglo en un orden especifico .Son  las bases de la eficiencia  en computacion , ya que facilitan enormemente las operaciones de busqueda 
 
@@ -13,13 +13,13 @@ En este caso veremos tres de los ejemplos de metodos de ordenamiento
 
 # *Insertion sort*
 Funciona de manera similar a como organizar una baraja de cartas en las manos .Toma un elemento y lo inserta en la posicion correcta comparandolo con los que ya estan ordenados a su izquierda osea al principio de la lista.
-### Cuando se ocupa?
+## *Cuando se ocupa?*
              Este metodo de ordenamiento se ocupa para un conjunto de elementos o datos ya esta casi ordenado o cuando manejas una pequeña muy pequeña de datos
-### Eficiencia
+## *Eficiencia*
              Es muy eficiente en terminos de memoria  tiene espacio    O(1) y tiene un rendimiento de O(n) en su mejor caso.
 
 
-## 🚀 Implementación de Insertion Sort en Java
+## 🚀 *Implementación de Insertion Sort en Java*
 
 El siguiente algoritmo ordena un arreglo de enteros desplazando los elementos mayores a la derecha para insertar la `clave` en su posición correcta.
 
@@ -46,15 +46,15 @@ public static void insertionSort(int[] arreglo) {
 
 Busca el elementomas pequeño de la lista y lo intercambia con el primero.Luego bsuca el siguiente mas pequeño y lo pone en la segunda posicion y asi sucesivamente.
 
-### Cuando ocuparlo?
-        Si la lista es pequeña de 20 - 30 elementos es rapida 
-        Si la lista esta ya casi lista por ejemplo cuando solo tiene que acomodar dos numeros 
-        Si vas recibiendo numeros de uno en uno y quieres mantener la lista ordenada mientras llegan.
+### *Cuando ocuparlo ?*
+    Si la lista es pequeña de 20 - 30 elementos es rapida 
+    Si la lista esta ya casi lista por ejemplo cuando solo tiene que acomodar dos numeros 
+    Si vas recibiendo numeros de uno en uno y quieres mantener la lista ordenada mientras llegan.
 
-### Eficiencia 
-        No es muy eficiente para listas grandes , ya q su complejidad siempre es O(n^2) sin importar si la lista ya esta ordenada 
+## *Eficiencia*
+    No es muy eficiente para listas grandes , ya q su complejidad siempre es O(n^2) sin importar si la lista ya esta ordenada 
 
-## 🚀 Implementación de Selection sort  en Java
+## 🚀 *Implementación de Selection sort  en Java*
 
 ```java
 
@@ -93,12 +93,12 @@ public static void selectionSort(int[] arreglo) {
 
 Optimiza añade una bandera booleana para detectar si hubo intercambios en una pasada .Si no hubo cambios , significa que la lista ya esta lista y el algoritmp se detiene .
 
-## Cuando ocuparlo ?
-         Es la forma mas sencilla de verificar si una lista ya esta lista . Si lanzas una pasada de butbuja y la bandera de intercambio no se activa puedes asegurar que la lista esta perfecta.
-## Eficiencia
-         En el mejor de los casos (lista ya ordenada) termina en O(n).En el peor ,sigue siendo O(n^2).
+## *Cuando ocuparlo ?*
+    Es la forma mas sencilla de verificar si una lista ya esta lista . Si lanzas una pasada de butbuja y la bandera de intercambio no se activa puedes asegurar que la lista esta perfecta.
+## *Eficiencia*
+    En el mejor de los casos (lista ya ordenada) termina en O(n).En el peor ,sigue siendo O(n^2).
 
-## 🚀 Implementación de Burbuja avanzado  en Java
+## 🚀 *Implementación de Burbuja avanzado  en Java*
 
 ```java
 
