@@ -138,7 +138,8 @@ Esto debe ir siempre al final de una clase para asi poder imprimir los metodos d
 
 ```java
 public static void imprimir(int[] arreglo) {
-        System.out.println(Arrays.toString(arr));
+        for(Int y : arreglo)
+        System.out.println(arreglo.getNombre() + arreglo.getApellido() + ..................)
     }
 ```
 
