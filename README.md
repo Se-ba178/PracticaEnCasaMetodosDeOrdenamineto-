@@ -5,23 +5,18 @@ Los metodos de ordenamineto son algoritmos diseñados para organizar los element
 En este caso veremos tres de los ejemplos de metodos de ordenamiento 
 
 
-
-
-
-
-
-
 # *Insertion sort*
 Funciona de manera similar a como organizar una baraja de cartas en las manos .Toma un elemento y lo inserta en la posicion correcta comparandolo con los que ya estan ordenados a su izquierda osea al principio de la lista.
 ## *Cuando se ocupa?*
-             Este metodo de ordenamiento se ocupa para un conjunto de elementos o datos ya esta casi ordenado o cuando manejas una pequeña muy pequeña de datos
+             Este metodo de ordenamiento se ocupa para un conjunto de elementos o datos 
+             ya esta casi ordenado o cuando manejas una pequeña muy pequeña de datos
 ## *Eficiencia*
-             Es muy eficiente en terminos de memoria  tiene espacio    O(1) y tiene un rendimiento de O(n) en su mejor caso.
+             Es muy eficiente en terminos de memoria  tiene 
+             espacio    O(1) y tiene un rendimiento de O(n) en su mejor caso.
 
 
 ## 🚀 *Implementación de Insertion Sort en Java*
 
-El siguiente algoritmo ordena un arreglo de enteros desplazando los elementos mayores a la derecha para insertar la `clave` en su posición correcta.
 
 ```java
 public static void insertionSort(int[] arreglo) {
@@ -52,7 +47,8 @@ Busca el elementomas pequeño de la lista y lo intercambia con el primero.Luego 
     Si vas recibiendo numeros de uno en uno y quieres mantener la lista ordenada mientras llegan.
 
 ## *Eficiencia*
-    No es muy eficiente para listas grandes , ya q su complejidad siempre es O(n^2) sin importar si la lista ya esta ordenada 
+    No es muy eficiente para listas grandes , ya q su complejidad 
+    siempre es O(n^2) sin importar si la lista ya esta ordenada 
 
 ## 🚀 *Implementación de Selection sort  en Java*
 
@@ -133,3 +129,26 @@ public static void burbujaAvanzado(int[] arreglo){
 | **Insertion Sort** | $O(n^2)$ | $O(n)$ | Extremadamente rápido para listas casi ordenadas. | Listas pequeñas o en tiempo real. |
 | **Selection Sort** | $O(n^2)$ | $O(n^2)$ | Realiza el mínimo de intercambios de memoria. | Cuando el swap es costoso. |
 | **Bubble Sort (Opt)**| $O(n^2)$ | $O(n)$ | Fácil de implementar y detecta orden previo. | Uso académico o listas mínimas. |
+
+
+
+## 💻 *Metodo para imprimir cada metodo de Ordenamiento*
+
+Esto debe ir siempre al final de una clase para asi poder imprimir los metodos de ordenamiento de una manera mas profesional en  la clase Principal `App` pero siempre fuera  `como si fuera un metodo mas de  la clase`
+
+```java
+public static void imprimir(int[] arreglo) {
+        System.out.println(Arrays.toString(arr));
+    }
+```
+
+de ahi solo lo llamamos a la clase main con el nombre de la clase y el mostar con el tipo de dato 
+
+## *NombreDeLaClase.metodo();*
+
+Ejemplo llamado al Main   `App` :
+
+```java
+System.out.println("Arreglo")
+BurbujaAvanzado.imprimir(miArreglo);
+```
