@@ -153,3 +153,49 @@ Ejemplo llamado al Main   `App` :
 System.out.println("Arreglo")
 BurbujaAvanzado.imprimir(miArreglo);
 ```
+
+
+
+### 🥴  Busqueda Binaria
+
+*La búsqueda binaria es un algoritmo que se utiliza para encontrar un elemento en una lista ordenada de forma eficiente. Funciona dividiendo la lista en dos partes repetidamente y comparando el valor buscado con el elemento central, eliminando la mitad donde no puede estar.*
+
+*Se utiliza para mejorar la velocidad de búsqueda en grandes conjuntos de datos, reduciendo el número de comparaciones necesarias.*
+
+*Su complejidad es O(log n), lo que la hace mucho más rápida que la búsqueda lineal.*
+
+
+```java
+public Brand binarySearchByValidYears(Brand[] arreglo, int validYears, boolean isAscending) {
+
+    // 1. Ordenar el arreglo
+    MetodoDeOrdenamiento(arreglo);
+
+    int bajo = 0;
+    int alto = arreglo.length - 1;
+
+    // 2. Búsqueda binaria
+    while (bajo <= alto) {
+
+        int centro = (bajo + alto) / 2;
+        int valorCentro = arreglo[centro].getTotalValidYears();
+
+        // 3. Si lo encuentra
+        if (valorCentro == validYears) {
+            return arreglo[centro];
+        }
+
+        // 4. Decidir dirección
+        if (valorCentro < validYears) {
+            bajo = centro + 1;
+        } else {
+            alto = centro - 1;
+        }
+    }
+
+    // 5. No encontrado
+    return null;
+}
+
+```
+
